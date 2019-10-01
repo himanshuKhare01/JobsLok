@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.PostTaskActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Task title"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/task_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lines="1"
+        android:background="@drawable/background_edittext"
+        android:hint="e.g Clean my 2 bedroom apartment"
+        android:inputType="textShortMessage|textCapWords"
+        android:padding="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="30dp"
+        android:text="Describe your task"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/task_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:background="@drawable/background_edittext"
+        android:inputType="textLongMessage|textMultiLine"
+        android:minLines="6"
+        android:padding="10dp" />
+    <Switch
+        android:id="@+id/task_switch"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:text="Can this task be completed remotely?"
+        android:layout_height="wrap_content"
+        android:gravity="start|center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="30dp"
+        android:text="Task Location (postcode)"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_location"
+        android:clickable="true"
+        android:layout_marginTop="20dp"
+        android:editable="false"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_location_on_black_24dp"
+        android:drawableEnd="@android:drawable/arrow_down_float"
+        android:background="@drawable/background_edittext"
+        android:textColorHint="@android:color/secondary_text_light"
+        android:hint="Select a location"
+        android:focusable="false"
+        android:inputType="none"
+        android:onClick="selectLocation"
+        android:importantForAutofill="yes" />
+
+</LinearLayout>

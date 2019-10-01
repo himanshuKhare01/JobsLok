@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="indicator_colors">
+        <item>@color/indicator_1</item>
+        <item>@color/indicator_2</item>
+        <item>@color/indicator_3</item>
+        <item>@color/indicator_4</item>
+    </array>
+    <string-array name="details3">
+        <item>Total Rate</item>
+        <item>Hourly Rate</item>
+    </string-array>
+    <string-array name="task">
+        <item>All tasks</item>
+        <item>Posted</item>
+        <item>Assigned</item>
+        <item>Offered</item>
+        <item>Completed</item>
+    </string-array>
+    <string-array name="message">
+        <item>Accepted</item>
+        <item>Assign</item>
+    </string-array>
+    <string-array name="task_type">
+        <item>Cleaning</item>
+        <item>Delivery</item>
+        <item>Admin</item>
+        <item>Assembly</item>
+        <item>Gardening</item>
+        <item>Computer IT</item>
+        <item>Photography</item>
+        <item>Handyman</item>
+        <item>Pick Up</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="taskers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string name="menu_post">Post task</string>
+    <string name="menu_task">My tasks</string>
+    <string name="menu_browse">Browse</string>
+    <string name="menu_messages">Messages</string>
+    <string name="menu_more">More</string>
+    <string-array name="titles">
+        <item>OPEN</item>
+        <item>ASSIGNED</item>
+        <item>COMPLETED</item>
+    </string-array>
+</resources>

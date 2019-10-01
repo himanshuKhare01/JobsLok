@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.OpenFragment">
+    <TextView
+        android:id="@+id/open_title"
+        android:layout_width="match_parent"
+        android:text="Title"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/secondary_text_light"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/open_imageview"
+                android:layout_width="30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher"
+                android:layout_height="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Posted By"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/open_name"
+                    android:layout_width="match_parent"
+                    android:text="Name"
+                    android:textColor="@color/colorBackgroud"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/postDate"
+                    android:layout_width="match_parent"
+                    android:text="Posted On"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center|start"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_location_on_black_24dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:id="@+id/open_locarion"
+                android:layout_width="match_parent"
+                android:text="Location \nRemote"
+                android:layout_marginStart="18dp"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"/>
+            </LinearLayout>
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center|start"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_date_range_black_24dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:id="@+id/open_date"
+                android:layout_width="match_parent"
+                android:text="To Be Done On \nToday"
+                android:layout_marginStart="18dp"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/background_pthree"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="TASK PRICE"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="#E5F0D9"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/open_price"
+            android:layout_width="match_parent"
+            android:text="\u20B9 250"
+            android:gravity="center"
+            android:textColor="@color/colorGold"
+            android:padding="20dp"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorLightGray"
+            android:layout_marginBottom="10dp"
+            android:layout_height="0.5dp"/>
+        <Button
+            android:id="@+id/open_offer_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/continue_task"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:text="Make an Offer"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/open_details"
+        android:layout_width="match_parent"
+        android:text="DETAILS"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textColor="@android:color/secondary_text_light"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorLightGray"
+        android:layout_height="0.25dp"/>
+
+    <TextView
+        android:id="@+id/no_of_offers"
+        android:layout_width="match_parent"
+        android:text="OFFERS (5)"
+        android:textColor="@color/colorDarkerGray"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"/>
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/open_offersRecyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorLightGray"
+        android:layout_height="0.25dp"/>
+    <TextView
+        android:id="@+id/no_of_question"
+        android:layout_width="match_parent"
+        android:text="QUESTIONS (0)"
+        android:textColor="@color/colorDarkerGray"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/current_user_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_launcher"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <EditText
+            android:id="@+id/task_questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:hint="Ask Your Questions"
+            android:background="@drawable/background_pthree"
+            android:inputType="textLongMessage|textMultiLine"
+            android:minLines="3" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="start"
+        android:src="@drawable/ic_attachment_black_24dp"
+        />
+    <TextView
+        android:id="@+id/task_send"
+        android:layout_width="match_parent"
+        android:text="Send"
+        android:gravity="end"
+        android:enabled="false"
+        android:textSize="16sp"
+        android:textColor="@android:color/secondary_text_light"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/open_questionsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</ScrollView>

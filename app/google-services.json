@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "378885103562",
+    "firebase_url": "https://jobslok-f905e.firebaseio.com",
+    "project_id": "jobslok-f905e",
+    "storage_bucket": "jobslok-f905e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378885103562:android:eba0646d68b3bc55",
+        "android_client_info": {
+          "package_name": "com.jobslok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378885103562-l0tl6bl0jimtksju551fds83s9me6i0m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jobslok",
+            "certificate_hash": "cb1c1b4f5265b9e6880b5981303268935d122493"
+          }
+        },
+        {
+          "client_id": "378885103562-sk7ofjlfnm9pl07b4vgi39kqorj3dvpu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQwpJ8VYY--TS6cLoE8kO7kJdque-1hWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378885103562-sk7ofjlfnm9pl07b4vgi39kqorj3dvpu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

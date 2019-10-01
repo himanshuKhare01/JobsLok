@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/question_imageview"
+    android:layout_width="35dp"
+    android:src="@mipmap/ic_launcher"
+    android:layout_height="35dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/question_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bryony P."
+            android:textColor="@color/colorBackgroud"
+            android:textSize="16sp" />
+
+        <com.hungnc.expandabletextview.ExpandableTextView
+            android:id="@+id/question_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hnc_maxLine="2"
+            android:layout_marginTop="5dp"
+            app:hnc_moreLessShow="false"
+            app:hnc_moreLessTextSize="14sp"
+            app:hnc_moreLessTextColor="@color/colorBackgroud"
+            app:hnc_textSize="16sp"
+            app:hnc_text="Grant of Copyright License. Subject to the terms and conditions of Work and such Derivative Works in Source or Object form." />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center|start"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/question_date"
+        android:layout_width="wrap_content"
+        android:text="16 hours ago"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Reply"
+            android:drawableStart="@drawable/ic_reply_black_24dp"
+            android:drawablePadding="5dp"
+            android:textSize="14sp"
+            android:layout_marginStart="30dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

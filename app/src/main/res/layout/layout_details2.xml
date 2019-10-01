@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:text="When do you need it done?"
+        android:textColor="@android:color/secondary_text_light" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_date_picker"
+        android:clickable="true"
+        android:layout_marginTop="20dp"
+        android:editable="false"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@android:drawable/ic_menu_my_calendar"
+        android:drawableEnd="@android:drawable/arrow_down_float"
+        android:background="@drawable/background_edittext"
+        android:textColorHint="@android:color/secondary_text_light"
+        android:hint="Select a date"
+          android:focusable="false"
+        tools:ignore="Autofill,TextFields" />
+
+
+
+</LinearLayout>

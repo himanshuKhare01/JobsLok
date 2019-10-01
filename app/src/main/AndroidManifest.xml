@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jobslok">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:node="remove" />
+
+    <application
+        android:name=".Class.FirebaseOffline"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".Activity.SupportCenterActivity"></activity>
+        <activity android:name=".Activity.EditProfileActivity" />
+        <activity android:name=".Activity.HelpActivity" />
+        <activity android:name=".Activity.SettingsActivity" />
+        <activity android:name=".Activity.TaskAlertsActivity" />
+        <activity android:name=".Activity.NotificationActivity" />
+        <activity android:name=".Activity.ReviewsActivity" />
+        <activity android:name=".Activity.PaymentMethodActivity" />
+        <activity android:name=".Activity.PaymentHistoryActivity" />
+        <activity android:name=".Activity.ProfileActivity" />
+        <activity android:name=".Activity.DashboardActivity" />
+        <activity android:name=".Activity.ChatActivity" />
+        <activity
+            android:name=".Activity.ViewTaskActivity"
+            android:parentActivityName=".Activity.MainActivity" />
+        <activity
+            android:name=".Activity.SearchLocationActivity"
+            android:parentActivityName=".Activity.PostTaskActivity" />
+        <activity
+            android:name=".Activity.PostTaskActivity"
+            android:parentActivityName=".Activity.MainActivity" />
+        <activity android:name=".Activity.GuideActivity" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.RegistrationActivity" />
+        <activity android:name=".Activity.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCYQQC1px4F3XJG0N_Me5mImgqG8iSnCaU" />
+        <receiver android:name=".Class.NetworkBroadcastReceiver">
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

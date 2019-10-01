@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_post"
+        android:title="@string/menu_post"
+        android:icon="@drawable/ic_post_add_black_24dp"
+        />
+    <item
+        android:id="@+id/menu_task"
+        android:title="@string/menu_task"
+        android:icon="@drawable/ic_list"
+        />
+
+    <item
+        android:id="@+id/menu_browse"
+        android:title="@string/menu_browse"
+        android:icon="@drawable/ic_search_black_24dp" />
+
+    <item
+        android:id="@+id/menu_messages"
+        android:title="@string/menu_messages"
+        android:icon="@drawable/ic_sms_black_24dp" />
+    <item
+        android:id="@+id/menu_more"
+        android:title="@string/menu_more"
+        android:icon="@drawable/ic_more_horiz_black_24dp" />
+
+</menu>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.FragmentOne">
+
+    <Spinner
+        android:id="@+id/fragment_one"
+        android:entries="@array/task"
+        android:layout_margin="10dp"
+        android:paddingEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlSymmetry" />
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/one_recyclerView"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/fragment_one"
+    android:layout_height="match_parent"/>
+</RelativeLayout>
