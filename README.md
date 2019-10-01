@@ -2,3 +2,5 @@ This is a source code of JobsLok app - A platform for posting and doing a task a
 
 JobsLok is a online android based platform for your small daily basis needs based on small task.
 
+Inspired from Airtasker a australian company.
+

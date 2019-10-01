@@ -24,20 +24,17 @@ import java.util.List;
 import java.util.Objects;
 
 public class DashboardActivity extends AppCompatActivity {
-    private Toolbar toolbar;
-    private TabLayout tabLayout;
-    private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-        toolbar=findViewById(R.id.dashboard_toolbar);
+        Toolbar toolbar = findViewById(R.id.dashboard_toolbar);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_arrow_back_black_24dp);
-        tabLayout=findViewById(R.id.dashboard_tabs);
-        viewPager=findViewById(R.id.dashboard_viewpager);
+        TabLayout tabLayout = findViewById(R.id.dashboard_tabs);
+        ViewPager viewPager = findViewById(R.id.dashboard_viewpager);
         setupViewPager(viewPager);
         tabLayout.setupWithViewPager(viewPager);
     }

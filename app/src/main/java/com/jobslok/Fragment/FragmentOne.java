@@ -42,8 +42,6 @@ public class FragmentOne extends Fragment {
         // Required empty public constructor
     }
 
-    private RecyclerView recyclerView;
-    private CollectionReference collectionReference;
     private String uid;
 
     @Override
@@ -51,9 +49,9 @@ public class FragmentOne extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_one, container, false);
-        recyclerView = v.findViewById(R.id.one_recyclerView);
+        RecyclerView recyclerView = v.findViewById(R.id.one_recyclerView);
         uid = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid();
-        collectionReference = FirebaseFirestore.getInstance().collection(getResources().getStringArray(R.array.task_type)[0]);
+        CollectionReference collectionReference = FirebaseFirestore.getInstance().collection(getResources().getStringArray(R.array.task_type)[0]);
         FirestoreRecyclerOptions<PostTaskView> options = new FirestoreRecyclerOptions.Builder<PostTaskView>()
                 .setQuery(collectionReference, PostTaskView.class)
                 .build();

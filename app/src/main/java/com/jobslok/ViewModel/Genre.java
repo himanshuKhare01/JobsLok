@@ -13,7 +13,7 @@ public class Genre extends ExpandableGroup<Artist> {
     this.iconResId = iconResId;
   }
 
-  public int getIconResId() {
+  private int getIconResId() {
     return iconResId;
   }
 

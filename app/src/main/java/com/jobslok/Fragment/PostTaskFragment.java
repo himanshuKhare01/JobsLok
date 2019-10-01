@@ -14,7 +14,7 @@ import com.jobslok.Activity.PostTaskActivity;
 import com.jobslok.R;
 public class PostTaskFragment extends Fragment {
 
-    CardView task_cleaning;
+    private CardView task_cleaning;
 
     public PostTaskFragment() {
         // Required empty public constructor

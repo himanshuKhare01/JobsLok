@@ -1,20 +1,20 @@
 package com.jobslok.ViewModel;
 
 public class PostTaskView {
-    String title;
-    String description;
-    boolean remotely;
-    String location;
-    String date;
-    String budget;
-    String hour;
-    String pricehour;
-    Long numberof_tasker;
-    String image;
-    String uid;
-    String type;
-    String name;
-    String postDate;
+    private String title;
+    private String description;
+    private boolean remotely;
+    private String location;
+    private String date;
+    private String budget;
+    private String hour;
+    private String pricehour;
+    private Long numberof_tasker;
+    private String image;
+    private String uid;
+    private String type;
+    private String name;
+    private String postDate;
     String status;
     String offers;
 

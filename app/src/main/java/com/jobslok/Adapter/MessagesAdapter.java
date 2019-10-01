@@ -23,10 +23,9 @@ import java.util.Objects;
 public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.MessageViewHolder> {
     private ArrayList<Messages> userMessagesList;
     private FirebaseAuth mAuth;
-    private Context context;
+
     public MessagesAdapter(ArrayList<Messages> userMessagesList, Context context) {
         this.userMessagesList = userMessagesList;
-        this.context = context;
     }
 
     @NonNull

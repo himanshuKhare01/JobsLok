@@ -58,7 +58,6 @@ public class RegistrationActivity extends AppCompatActivity {
     String TAG = "RegisterActivity";
     FirebaseAuth mAuth;
     private static final int RC_SIGN_IN = 9001;
-    private CollectionReference userCollectionReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -196,7 +195,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
     private void storeUserInfo(String address) {
         mAuth=FirebaseAuth.getInstance();
-        userCollectionReference = FirebaseFirestore.getInstance().collection("users");
+        CollectionReference userCollectionReference = FirebaseFirestore.getInstance().collection("users");
         Map<String, Object> user = new HashMap<>();
         user.put("name", Objects.requireNonNull(mAuth.getCurrentUser()).getDisplayName());
         user.put("email", mAuth.getCurrentUser().getEmail());

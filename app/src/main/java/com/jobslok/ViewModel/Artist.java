@@ -13,7 +13,7 @@ public class Artist implements Parcelable {
     this.isFavorite = isFavorite;
   }
 
-  protected Artist(Parcel in) {
+  private Artist(Parcel in) {
     name = in.readString();
   }
 
@@ -21,7 +21,7 @@ public class Artist implements Parcelable {
     return name;
   }
 
-  public boolean isFavorite() {
+  private boolean isFavorite() {
     return isFavorite;
   }
 
